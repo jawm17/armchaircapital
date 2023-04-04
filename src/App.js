@@ -94,11 +94,11 @@ function App() {
         </div>
         <div className="centerCompany">
           <div>
-            <div onClick={() => window.open('https://www.ethergames.com', '_blank')} className="companyImg" id="companyImgBgGames"><img id="ethergames" src={coin}></img></div>
-            <div onClick={() => window.open('https://www.ethergames.com', '_blank')} className="companyName">
+            <div onClick={() => window.open('https://www.ethergames.io', '_blank')} className="companyImg" id="companyImgBgGames"><img id="ethergames" src={coin}></img></div>
+            <div onClick={() => window.open('https://www.ethergames.io', '_blank')} className="companyName">
               ethergames
             </div>
-            <div onClick={() => window.open('https://www.ethergames.com', '_blank')} className="companyUrl">
+            <div onClick={() => window.open('https://www.ethergames.io', '_blank')} className="companyUrl">
               ethergames.com
             </div>
           </div>
