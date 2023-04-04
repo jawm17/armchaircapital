@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/armchaircapital/static/css/main.1f301165.css",
+    "main.css": "/armchaircapital/static/css/main.74037c43.css",
     "main.js": "/armchaircapital/static/js/main.cc91b8aa.js",
     "static/js/787.07bec191.chunk.js": "/armchaircapital/static/js/787.07bec191.chunk.js",
     "static/media/moneyEmoji.png": "/armchaircapital/static/media/moneyEmoji.c1f60a31543767e35562.png",
     "index.html": "/armchaircapital/index.html",
-    "main.1f301165.css.map": "/armchaircapital/static/css/main.1f301165.css.map",
+    "main.74037c43.css.map": "/armchaircapital/static/css/main.74037c43.css.map",
     "main.cc91b8aa.js.map": "/armchaircapital/static/js/main.cc91b8aa.js.map",
     "787.07bec191.chunk.js.map": "/armchaircapital/static/js/787.07bec191.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f301165.css",
+    "static/css/main.74037c43.css",
     "static/js/main.cc91b8aa.js"
   ]
 }
