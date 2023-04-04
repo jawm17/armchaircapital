@@ -10,23 +10,9 @@ function App() {
   }
 
   useEffect(() => {
-    if (contacting) {
-      document.getElementById("menu").style.width = "400px";
-      // document.getElementById("menuOpen").style.opacity = "0%";
-      setTimeout(() => {
-        document.getElementById("menuClosed").style.display = "flex";
-      }, 50);
-      setTimeout(() => {
-        document.getElementById("menuClosed").style.opacity = "100%";
-      }, 100);
-    } else {
-      if(document.getElementById("menuClosed")) {
-        document.getElementById("menu").style.width = "130px";
-        document.getElementById("menuClosed").style.display = "none";
-        document.getElementById("menuClosed").style.opacity = "0%";
-      }
-    }
-  }, [contacting]);
+    window.addEventListener('resize', appHeight);
+    appHeight();
+  }, []);
 
   function openMenu() {
     if (document.getElementById("menuClosed").style.display == "none") {
@@ -48,6 +34,11 @@ function App() {
     document.getElementById("menuClosed").style.display = "none";
     document.getElementById("menuClosed").style.opacity = "0%";
   }
+
+  const appHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
 
   return (
     <div id="area">
