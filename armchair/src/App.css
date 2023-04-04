@@ -1,0 +1,293 @@
+@tabsHeight: 36px;
+@tabColor: #FcFcfc;
+@tabSelectedColor: #FFF;
+
+:root {
+  --tabsHeight: 36px;
+  --tabColor: #FcFcfc;
+  --tabSelectedColor: #FFF;
+}
+
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: calc(100vh - 20px);
+  background-color: #185ADB;
+  /* #0a4abf */
+}
+
+.heroText {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 75px;
+  text-align: start;
+  position: absolute;
+  bottom: 57px;
+  padding: 35px;
+  line-height: 1.3;
+}
+
+#menu {
+  position: fixed;
+  width: 130px;
+  height: 40px;
+  border-radius: 35px;
+  background-color: #F2F3F7;
+  right: 35px;
+  top: 30px;
+  z-index: 10;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  max-width: calc(100vw - 70px);
+
+  /* font-size: 13px; */
+}
+
+#closeMenuBtn {
+  position: absolute;
+  right: 28px;
+  cursor: pointer;
+}
+
+#phone {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+#email {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#menuClosed {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  opacity: 0%;
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+
+#menuOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+  cursor: pointer;
+}
+
+#contactLabel {
+  margin-left: 10px;
+}
+
+.menuTab {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: -100vh;
+  z-index: 9;
+  transition: bottom 0.5s linear;
+}
+
+#blueMenu {
+  background-color: #185ADB;
+}
+
+#yellowMenu {
+  background-color: #FFED31;
+}
+
+#blackMenu {
+  background-color: #1C252C;
+}
+
+#greenMenu {
+  background-color: rgb(255, 255, 255);
+}
+
+#look {
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+
+#eyes {
+  position: absolute;
+  top: 89px;
+  font-size: 65px;
+  left: 100px;
+}
+
+#portfolio {
+  width: 100vw;
+  height: calc(100vh);
+  background-color: #FFED31;
+  position: relative;
+}
+
+#tabs {}
+
+.folder-tab {
+  height: 36px;
+  position: absolute;
+  top: -36px;
+  background-color: #FFED31;
+  left: 55px;
+  display: inline-block;
+  z-index: 2;
+  margin-right: 50px;
+  color: black;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+#folderTab2 {
+  left: 165px;
+  background-color: #1C252C;
+  color: white;
+  z-index: 1;
+}
+
+#folderTab2selected,
+#folderTab2:hover {
+  z-index: 1;
+  color: black;
+  background-color: #1C252C;
+  color: white;
+}
+
+#folderTab2.selected:before,
+#folderTab2.selected:after,
+#folderTab2:hover:before,
+#folderTab2:hover:after {
+  background-color: #1C252C;
+  color: white;
+}
+
+#folderTab2:selected,
+#folderTab2:hover {
+  z-index: 3;
+  color: black;
+  background-color: #1C252C;
+  color: white;
+}
+
+#folderTab2:before {
+  background-color: #1C252C;
+  color: white;
+}
+
+#folderTab2:after {
+  background-color: #1C252C;
+  color: white;
+}
+
+#folderTab3 {
+  left: 255px;
+  background-color: white;
+  color: black;
+  z-index: 0;
+}
+
+#folderTab3:selected,
+#folderTab3:hover {
+  z-index: 1;
+  color: black;
+  background-color: white;
+  color: black;
+}
+
+#folderTab3.selected:before,
+#folderTab3.selected:after,
+#folderTab3:hover:before,
+#folderTab3:hover:after {
+  background-color: white;
+  color: black;
+}
+
+#folderTab3:selected,
+#folderTab3:hover {
+  z-index: 3;
+  color: black;
+  background-color: white;
+  color: black;
+}
+
+#folderTab3:before {
+  background-color: white;
+  color: black;
+}
+
+#folderTab3:after {
+  background-color: white;
+  color: black;
+}
+
+.folder-tab.selected:before,
+.folder-tab.selected:after,
+.folder-tab:hover:before,
+.folder-tab:hover:after {
+  background-color: #FFED31;
+}
+
+.folder-tab:before {
+  height: 36px;
+  width: 30px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #FFED31;
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  z-index: -1;
+}
+
+.folder-tab:after {
+  height: 36px;
+  width: 30px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #FFED31;
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
+  z-index: -1;
+}
+
+.folder-tab span {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 36px;
+  line-height: 40px;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 620px) {
+  .heroText {
+    font-size: 40px;
+  }
+
+  #menu {
+    font-size: 13px;
+    right: 15px;
+    top: 25px;
+    max-width: calc(100vw - 30px);
+  }
+}
