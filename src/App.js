@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div id="area">
-      <FallingEmoji element={"appHome"}/>
+      {/* <FallingEmoji element={"appHome"}/> */}
       <div className="menuTab" id="blueMenu">
 
       </div>
@@ -69,7 +69,7 @@ function App() {
           </div>
         </div>
         <div className="heroText">
-          Armchair Capital is looking for great companies
+          Armchair Capital is investing in cool companies
         </div>
       </div>
       <div id="portfolio">
