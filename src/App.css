@@ -32,7 +32,7 @@
   text-align: start;
   position: fixed;
   bottom: 56px;
-  bottom: calc((-1 * 100%) + 856px);
+  /* bottom: calc((-1 * 100%) + 856px); */
   padding: 35px;
   line-height: 1.3;
 }
