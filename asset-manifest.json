@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/armchaircapital/static/css/main.ad6a492c.css",
-    "main.js": "/armchaircapital/static/js/main.cc91b8aa.js",
+    "main.css": "/armchaircapital/static/css/main.84c3b0f6.css",
+    "main.js": "/armchaircapital/static/js/main.96f29931.js",
     "static/js/787.07bec191.chunk.js": "/armchaircapital/static/js/787.07bec191.chunk.js",
+    "static/media/coin.jpg": "/armchaircapital/static/media/coin.683d009213243cc121ae.jpg",
     "static/media/moneyEmoji.png": "/armchaircapital/static/media/moneyEmoji.c1f60a31543767e35562.png",
     "index.html": "/armchaircapital/index.html",
-    "main.ad6a492c.css.map": "/armchaircapital/static/css/main.ad6a492c.css.map",
-    "main.cc91b8aa.js.map": "/armchaircapital/static/js/main.cc91b8aa.js.map",
+    "main.84c3b0f6.css.map": "/armchaircapital/static/css/main.84c3b0f6.css.map",
+    "main.96f29931.js.map": "/armchaircapital/static/js/main.96f29931.js.map",
     "787.07bec191.chunk.js.map": "/armchaircapital/static/js/787.07bec191.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad6a492c.css",
-    "static/js/main.cc91b8aa.js"
+    "static/css/main.84c3b0f6.css",
+    "static/js/main.96f29931.js"
   ]
 }
