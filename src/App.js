@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="area">
       <FallingEmoji element={"appHome"}/>
       <div className="menuTab" id="blueMenu">
 

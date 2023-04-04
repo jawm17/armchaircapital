@@ -8,11 +8,18 @@
   --tabSelectedColor: #FFF;
 }
 
+#area {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow: scroll;
+}
+
 
 .App {
   text-align: center;
   width: 100vw;
-  height: calc(100vh - 20px);
+  height: calc(100% - 20px);
   background-color: #185ADB;
   /* #0a4abf */
 }
@@ -93,9 +100,9 @@
 
 .menuTab {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: fixed;
-  bottom: -100vh;
+  bottom: -100%;
   z-index: 9;
   transition: bottom 0.5s linear;
 }
@@ -131,7 +138,7 @@
 
 #portfolio {
   width: 100vw;
-  height: calc(100vh);
+  height: calc(100%);
   background-color: #FFED31;
   position: relative;
 }
