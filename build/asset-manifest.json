@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ab31673.css",
-    "main.js": "/static/js/main.b1929e45.js",
-    "static/js/787.07bec191.chunk.js": "/static/js/787.07bec191.chunk.js",
-    "static/media/moneyEmoji.png": "/static/media/moneyEmoji.c1f60a31543767e35562.png",
-    "index.html": "/index.html",
-    "main.0ab31673.css.map": "/static/css/main.0ab31673.css.map",
-    "main.b1929e45.js.map": "/static/js/main.b1929e45.js.map",
-    "787.07bec191.chunk.js.map": "/static/js/787.07bec191.chunk.js.map"
+    "main.css": "/armchaircapital/static/css/main.0ab31673.css",
+    "main.js": "/armchaircapital/static/js/main.836efcc5.js",
+    "static/js/787.07bec191.chunk.js": "/armchaircapital/static/js/787.07bec191.chunk.js",
+    "static/media/moneyEmoji.png": "/armchaircapital/static/media/moneyEmoji.c1f60a31543767e35562.png",
+    "index.html": "/armchaircapital/index.html",
+    "main.0ab31673.css.map": "/armchaircapital/static/css/main.0ab31673.css.map",
+    "main.836efcc5.js.map": "/armchaircapital/static/js/main.836efcc5.js.map",
+    "787.07bec191.chunk.js.map": "/armchaircapital/static/js/787.07bec191.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ab31673.css",
-    "static/js/main.b1929e45.js"
+    "static/js/main.836efcc5.js"
   ]
 }
