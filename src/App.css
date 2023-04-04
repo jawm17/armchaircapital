@@ -139,9 +139,84 @@
 
 #portfolio {
   width: 100vw;
-  height: calc(100%);
+  min-height: calc(100%);
   background-color: #FFED31;
   position: relative;
+}
+
+#portfolioTitle {
+  font-family: 'Nunito', sans-serif;
+  padding-top: 40px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.companyImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #1C252C;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+
+.centerCompany {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.companyName {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.companyUrl {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+#companyImgBg {
+  background-image: url("https://i.ytimg.com/vi/XyB8GuwWMIs/maxresdefault.jpg");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#dobsFace {
+  width: 120px;
+  height: 120px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+#companyImgBgGames {
+  background-color:  #181818;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#ethergames {
+  width: 120px;
+  height: 120px;
+  margin-top: 15px;
+  border-radius: 50%;
 }
 
 #tabs {}

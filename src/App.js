@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FallingEmoji from "./FallingEmojis";
+import stars from "./stars.png";
+import coin from "./coin.jpg";
 import './App.css';
 
 function App() {
@@ -10,9 +12,10 @@ function App() {
   }
 
   useEffect(() => {
-    window.addEventListener('resize', appHeight);
-    appHeight();
-  }, []);
+    document.getElementById("menu").style.width = "130px";
+    document.getElementById("menuClosed").style.display = "none";
+    document.getElementById("menuClosed").style.opacity = "0%";
+  }, [contacting]);
 
   function openMenu() {
     if (document.getElementById("menuClosed").style.display == "none") {
@@ -38,7 +41,7 @@ function App() {
   const appHeight = () => {
     const doc = document.documentElement
     doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
+  }
 
   return (
     <div id="area">
@@ -56,7 +59,7 @@ function App() {
 
       </div>
       <div className="App" id="appHome">
-      <div id="menu">
+        <div id="menu">
           <div id="menuClosed">
             <div>📞</div><div id="phone">512-784-8431</div><div>📫</div><div id="email">jawm17@gmail.com</div>
             <div id="closeMenuBtn" onClick={() => closeMenu()}>❌</div>
@@ -64,23 +67,53 @@ function App() {
           <div id="menuOpen" onClick={() => openMenu()}>
             <div>📞</div><div id="contactLabel">contact</div>
           </div>
-      </div>
+        </div>
         <div className="heroText">
           Armchair Capital is looking for great companies
         </div>
       </div>
-      <div id="portfolio" onClick={() => scroll()}>
-        <nav id="tabs">
+      <div id="portfolio">
+        <nav id="tabs" onClick={() => scroll()}>
           <div class="folder-tab selected">
             <span>portfolio</span>
           </div>
-          {/* <div class="folder-tab" id="folderTab2">
-            <span>about</span>
-          </div>
-          <div class="folder-tab" id="folderTab3">
-            <span>team</span>
-          </div> */}
         </nav>
+        <div id="portfolioTitle">
+          Our Investments
+        </div>
+        <div className="centerCompany">
+          <div>
+            <div onClick={() => window.open('https://www.dobscoin.com', '_blank')} className="companyImg" id="companyImgBg"><img id="dobsFace" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7188.png?alt=media&token=1f1ced11-33b6-4a75-bdb9-2f1d0a93e71e"></img></div>
+            <div onClick={() => window.open('https://www.dobscoin.com', '_blank')} className="companyName">
+              dobscoin
+            </div>
+            <div onClick={() => window.open('https://www.dobscoin.com', '_blank')} className="companyUrl">
+              dobscoin.com
+            </div>
+          </div>
+        </div>
+        <div className="centerCompany">
+          <div>
+            <div onClick={() => window.open('https://www.ethergames.com', '_blank')} className="companyImg" id="companyImgBgGames"><img id="ethergames" src={coin}></img></div>
+            <div onClick={() => window.open('https://www.ethergames.com', '_blank')} className="companyName">
+              ethergames
+            </div>
+            <div onClick={() => window.open('https://www.ethergames.com', '_blank')} className="companyUrl">
+              ethergames.com
+            </div>
+          </div>
+        </div>
+        <div className="centerCompany">
+          <div>
+            <img onClick={() => window.open('https://www.venue.market', '_blank')} className="companyImg" src={stars}></img>
+            <div onClick={() => window.open('https://www.venue.market', '_blank')} className="companyName">
+              venue
+            </div>
+            <div onClick={() => window.open('https://www.venue.market', '_blank')} className="companyUrl">
+              venue.market
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
